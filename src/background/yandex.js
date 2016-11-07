@@ -1,5 +1,8 @@
 const md5 = require('blueimp-md5');
 const options = {
+    headers: {
+        'X-Retpath-Y': encodeURIComponent('https://music.yandex.ru/')
+    },
     redirect: 'error',
     credentials: 'include'
 };
